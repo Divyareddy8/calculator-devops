@@ -8,10 +8,10 @@ pipeline {
     }
 
     environment {
-        DOCKER_IMAGE = 'YOUR_DOCKERHUB_USERNAME/calculator-devops'   // <-- change me
+        DOCKER_IMAGE = 'divya995/calculator-devops'   // <-- change me
         IMAGE_TAG    = "${env.BUILD_NUMBER}"
-        NOTIFY_EMAIL = 'YOUR_EMAIL@example.com'                      // <-- change me
-        PROXY_PORT   = '8081'
+        NOTIFY_EMAIL = 'divya040477@gmail.com'                      // <-- change me
+        PROXY_PORT   = '8083'
         // Jenkins credentials (type: Username with password), ID = dockerhub-creds
         DOCKERHUB    = credentials('dockerhub-creds')
     }
