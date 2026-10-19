@@ -69,3 +69,21 @@ Check the application health endpoint:
 Stop the services:
 
     docker compose down
+
+## Running with Docker Compose
+
+Start the application and Nginx reverse proxy:
+
+    docker compose up -d --build
+
+Check the running containers:
+
+    docker compose ps
+
+Check the application health endpoint:
+
+    curl http://localhost:8083/actuator/health
+
+Stop the services:
+
+    docker compose down
