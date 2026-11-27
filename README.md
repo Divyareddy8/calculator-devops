@@ -87,3 +87,9 @@ Check the application health endpoint:
 Stop the services:
 
     docker compose down
+
+## CI/CD Pipeline Verification
+
+Every push to the main branch triggers the configured Jenkins pipeline,
+which builds, tests, publishes the Docker image and deploys the
+Calculator REST API using Docker Compose.
